@@ -19,7 +19,7 @@ app.post('/posts', async (req, res) => {
     const id = randomBytes(4).toString('hex');
     posts[id] = {id, title};
 
-    await axios.post("http://127.0.0.1:4005/events", {
+    await axios.post("http://event-bus-srv:4005/events", {
         type: "post_created",
         data: {id, title}
     })
