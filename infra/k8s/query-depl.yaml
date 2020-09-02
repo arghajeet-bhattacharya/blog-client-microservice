@@ -13,8 +13,8 @@ spec:
         app: query
     spec:
       containers:
-      - name: query
-        image: arghajeet/blogging-microservice-query
+        - name: query
+          image: arghajeet/blogging-microservice-query
 ---
 apiVersion: v1
 kind: Service

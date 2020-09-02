@@ -13,8 +13,8 @@ spec:
         app: posts
     spec:
       containers:
-      - name: posts
-        image: arghajeet/blogging-microservice-posts
+        - name: posts
+          image: arghajeet/blogging-microservice-posts
 ---
 apiVersion: v1
 kind: Service
